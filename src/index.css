@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F8F6F2;
+    color: #1A1816;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, Cambria, serif;
+}
+
+/* Organic paper watercolor wash border effect matching reference image */
+.paper-wash-bg {
+  background-color: #F8F6F2;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(235, 230, 222, 0.45) 0%, transparent 40%),
+    radial-gradient(circle at 90% 15%, rgba(230, 224, 214, 0.5) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(252, 250, 246, 0.8) 0%, transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(232, 226, 216, 0.45) 0%, transparent 50%),
+    radial-gradient(circle at 20% 85%, rgba(228, 221, 210, 0.4) 0%, transparent 45%);
+}
+
+.watercolor-edge-texture {
+  position: relative;
+}
+
+.watercolor-edge-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: 
+    radial-gradient(ellipse at top left, rgba(220, 212, 198, 0.25) 0%, transparent 35%),
+    radial-gradient(ellipse at bottom right, rgba(215, 207, 192, 0.3) 0%, transparent 40%),
+    radial-gradient(ellipse at center, transparent 65%, rgba(218, 210, 196, 0.2) 100%);
+  opacity: 0.9;
+}
+

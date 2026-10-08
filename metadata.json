@@ -1,0 +1,6 @@
+{
+  "name": "Nue Studio - Luxury Nail Care",
+  "description": "Precision manicures and pedicures delivering beautiful, long-lasting results with attention to detail.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
